@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login/Signup System</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <!-- Landing Page -->
+    <div id="home" class="form-card">
+      <h1>Welcome</h1>
+      <p>Please login or sign up to continue.</p>
+      <div class="actions">
+        <a href="#login" class="btn">Login</a>
+        <a href="#signup" class="btn btn-secondary">Sign Up</a>
+      </div>
+    </div>
+
+    <!-- Login Form -->
+    <div id="login" class="form-card">
+      <h2>Login</h2>
+      <form autocomplete="off">
+        <label for="login-email">Email</label>
+        <input type="email" id="login-email" name="login-email" required>
+        <label for="login-password">Password</label>
+        <input type="password" id="login-password" name="login-password" required>
+        <div class="form-footer">
+          <a href="#forgot" class="forgot-link">Forgot password?</a>
+        </div>
+        <button type="submit" class="btn">Login</button>
+        <div class="switch-link">
+          <span>Don't have an account?</span> <a href="#signup">Sign Up</a>
+        </div>
+      </form>
+      <a href="#home" class="back-link">&larr; Back</a>
+    </div>
+
+    <!-- Signup Form -->
+    <div id="signup" class="form-card">
+      <h2>Sign Up</h2>
+      <form autocomplete="off">
+        <label for="signup-name">Name</label>
+        <input type="text" id="signup-name" name="signup-name" required>
+        <label for="signup-email">Email</label>
+        <input type="email" id="signup-email" name="signup-email" required>
+        <label for="signup-password">Password</label>
+        <input type="password" id="signup-password" name="signup-password" required>
+        <button type="submit" class="btn">Sign Up</button>
+        <div class="switch-link">
+          <span>Already have an account?</span> <a href="#login">Login</a>
+        </div>
+      </form>
+      <a href="#home" class="back-link">&larr; Back</a>
+    </div>
+
+    <!-- Forgot Password Form -->
+    <div id="forgot" class="form-card">
+      <h2>Forgot Password</h2>
+      <form autocomplete="off">
+        <label for="forgot-email">Email</label>
+        <input type="email" id="forgot-email" name="forgot-email" required>
+        <button type="submit" class="btn">Reset Password</button>
+        <div class="switch-link">
+          <a href="#login">Back to Login</a>
+        </div>
+      </form>
+      <a href="#home" class="back-link">&larr; Back</a>
+    </div>
+  </div>
+</body>
+</html> 
